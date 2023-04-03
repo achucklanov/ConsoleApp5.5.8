@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(PowerUp(3,3));
+            Console.WriteLine(PowerUp(3, 3));
         }
         private static int PowerUp(int N, byte pow)
         {
@@ -20,15 +20,9 @@
                 }
                 else
                 {
-                    return N * PowerUp(N, pow - 1);
-
+                    return N * PowerUp(N, (byte)(pow - 1));
                 }
-
             }
-
         }
-
-
-
     }
 }
